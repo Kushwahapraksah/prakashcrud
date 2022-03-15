@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@model List<prakashcrud.db_prakash.empdetail>
+
+<table>
+    <tr>
+        <th>
+            emp_id
+        </th>
+
+        <th>
+            name
+        </th>
+        <th>
+            email
+        </th>
+    </tr>
+    @foreach(var obj in Model)
+            {
+                <tr>
+                    <td>
+                        @obj.emp_id
+                    </td>
+                    <td>
+                        @obj.name
+                    </td>
+                    <td>
+                        @obj.email
+                    </td>
+
+
+
+                </tr>
+            }
+
+
+</table>
